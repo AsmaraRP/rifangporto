@@ -1,0 +1,141 @@
+.banner {
+  display: flex;
+  height: 77vh;
+  padding-top: 6rem;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-family: "Mulish";
+  /* background-color: aquamarine; */
+}
+
+/* left side styling */
+.banner-left {
+  display: flex;
+  position: relative;
+  flex: 1;
+  flex-direction: column;
+  gap: 2rem;
+}
+.banner-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.banner-name > :nth-child(1) {
+  color: #ffd55e;
+  font-weight: bold;
+  font-size: 5rem;
+}
+.banner-name > :nth-child(2) {
+  font-weight: bold;
+  font-size: 3rem;
+}
+.banner-name > :nth-child(3) {
+  font-weight: 100;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.banner-button {
+  width: 12rem;
+  height: 3rem;
+  background: linear-gradient(180deg, blue 26.71%, skyblue 99.36%);
+  box-shadow: 0px 20px 24px 3px blue(251, 161, 40, 0.42);
+  border-radius: 34px;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+}
+.banner-button:hover {
+  background: white;
+  cursor: pointer;
+  border: 1px solid blue;
+  color: blue;
+}
+.banner-icons {
+  margin-top: 3rem;
+  display: flex;
+  gap: 0rem;
+}
+.banner-icons > * {
+  transform: scale(0.5);
+}
+.banner-icons > *:hover {
+  cursor: pointer;
+}
+.banner-sosmed {
+  color: blue;
+}
+.banner-sosmed:hover {
+  color: black;
+}
+/* right side styling */
+.banner-right {
+  flex: 1;
+  position: relative;
+}
+.banner-right > * {
+  position: absolute;
+  z-index: 1;
+}
+.banner-cardfloting {
+  transform: scale(1.1);
+  top: -19%;
+  left: -24%;
+  border-radius: 50%;
+  padding: 0;
+}
+.banner-emote {
+  transform: scale(0.2);
+  position: relative;
+  top: -30%;
+}
+.banner-photo {
+  transform: scale(1.1);
+  left: 28%;
+  top: -10%;
+}
+.banner-background1 {
+  transform: scale(0.69);
+  left: 20%;
+  top: 25%;
+}
+.banner-background2 {
+  top: -4.6rem;
+  transform: scale(0.67);
+  left: 15%;
+  top: -10%;
+}
+/* blur */
+.blur {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(212px);
+  z-index: 0;
+  top: -18%;
+  left: 56%;
+  filter: blur(72px);
+}
+
+@media screen and (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+    gap: 7rem;
+    height: 64rem;
+  }
+
+  .banner-right {
+    transform: scale(0.8);
+    left: -3rem;
+  }
+  .banner-right .blur {
+    display: none;
+  }
+  .floating-div:nth-of-type(1) {
+    /* display: none; */
+    top: -7rem !important;
+  }
+}
