@@ -29,7 +29,7 @@ const Work = ({ darkMode }) => {
         {/* right side */}
       </div>
       <div className="w-right">
-        <motion.div initial={{ rotate: 45 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 1, type: "spring" }} className="w-mainCircle">
+        <motion.div initial={{ rotate: 90 }} whileInView={{ rotate: 0 }} viewport={{ margin: "-40px" }} transition={{ duration: 5, type: "spring" }} className="w-mainCircle">
           <div className="w-secCircle">
             <img src={work1} alt="" className="imageWork" />
           </div>

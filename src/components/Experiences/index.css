@@ -1,0 +1,56 @@
+.experiences-main {
+  padding-top: 200px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  height: 90vh;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.experiences {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: "Mulish";
+  margin-bottom: 20px;
+}
+/* heading */
+.experiences span:nth-of-type(1) {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.experiences span:nth-of-type(2) {
+  color: #f5c32c;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.experiences-blur1 {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(212px);
+  z-index: 0;
+  top: 360%;
+  left: 20%;
+  filter: blur(72px);
+}
+.experiences-blur2 {
+  position: absolute;
+  width: 22rem;
+  height: 14rem;
+  border-radius: 50%;
+  background: #edd0ff;
+  filter: blur(212px);
+  z-index: 0;
+  top: 450%;
+  left: 70%;
+  filter: blur(72px);
+}
+.experiences-table {
+  border: 2px;
+  border-color: #f5c32c;
+}

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import About from "../../components/About";
 import Banner from "../../components/Banner";
+import Contact from "../../components/Contact";
+import Experiences from "../../components/Experiences";
 import Navbar from "../../components/Navbar";
 import Portfolio from "../../components/Portfolio";
 import Work from "../../components/Work";
@@ -19,6 +21,8 @@ function Home() {
       <About darkMode={darkMode} />
       <Work darkMode={darkMode} />
       <Portfolio darkMode={darkMode} />
+      <Experiences darkMode={darkMode} />
+      <Contact darkMode={darkMode} />
     </>
   );
 }

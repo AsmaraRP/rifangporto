@@ -51,15 +51,19 @@
   filter: blur(72px);
 }
 /* slider */
-.portfolio-card {
+.portfolio-image {
+  border: 7px solid var(--blueCard);
+  border-radius: 20px;
+  margin-bottom: 30px;
 }
-.portfolio-slider {
+.portfolio-slider .swiper {
+  height: 100%;
   width: 100%;
 }
-/* .portfolio-slider .swiper-slide {
-  width: 20rem;
-  overflow: hidden;
+.portfolio-slider .swiper-pagination-bullet {
+  margin-top: 50%;
+  background-color: blue;
 }
-.portfolio-slider .swipper-button-prev {
+/* .portfolio-slider .swipper-button-prev {
   color: black;
 } */

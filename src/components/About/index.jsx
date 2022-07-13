@@ -36,7 +36,7 @@ const About = ({ darkMode }) => {
       <div className="about-cards">
         {/* first card */}
         <motion.div initial={{ left: "45rem" }} whileInView={{ left: "34rem" }} transition={transition}>
-          <Card emoji={minion1} heading={"Web Developement"} detail={"Bootstrap, React, Express, Next, Vue, Nuxt, Redis, Redux, MySQl"} />
+          <Card emoji={minion1} heading={"Web Developement"} detail={"Bootstrap, React, Express, Next, Vue, Nuxt, Redis, Redux, MySQL"} />
         </motion.div>
         {/* second card */}
         <motion.div initial={{ left: "1rem", top: "12rem" }} whileInView={{ left: "14rem" }} transition={transition}>

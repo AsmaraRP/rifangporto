@@ -10,9 +10,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 const Portfolio = ({ darkMode }) => {
+  const image = [porto1, porto2, porto3, porto4];
   return (
-    <div className="portofolio-main">
-      <div className="portfolio" id="portfolio" style={darkMode ? { backgroundColor: "black", color: "white" } : { backgroundColor: "white", color: "black" }}>
+    <div className="portofolio-main" style={darkMode ? { backgroundColor: "black", color: "white" } : { backgroundColor: "white", color: "black" }}>
+      <div className="portfolio" id="portfolio">
         {/* heading */}
         <span style={{ color: darkMode ? "white" : "" }}>Recent Projects</span>
         <span>Portfolio</span>
@@ -20,19 +21,16 @@ const Portfolio = ({ darkMode }) => {
         <div className="portfolio-blur2" style={{ background: "#ffd55e" }}></div>
       </div>
       <div className="portfolio-card">
-        <Swiper loop={true} spaceBetween={10} navigation={true} modules={[Navigation, Pagination]} grabCursor={true} className="portfolio-slider">
-          <SwiperSlide>
-            <img src={porto1} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={porto3} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={porto2} alt="" />
-          </SwiperSlide>
-          <SwiperSlide>
-            <img src={porto4} alt="" />
-          </SwiperSlide>
+        <Swiper loop={true} spaceBetween={10} navigation={true} modules={[Navigation, Pagination]} grabCursor={true} className="portfolio-slider" slidesPerView={1} pagination={{ clickable: true }}>
+          {image.map((item, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <div>
+                  <img src={item} alt="" className="portfolio-image" />
+                </div>
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
     </div>
