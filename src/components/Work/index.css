@@ -45,6 +45,18 @@
   left: -40%;
   filter: blur(72px);
 }
+.w-button:hover {
+  width: 15rem;
+  height: 3rem;
+  margin-top: 2rem;
+  background: linear-gradient(180deg, #ffd55e 26.71%, yellow 99.36%);
+  box-shadow: 0px 20px 24px 3px lightblue(251, 161, 40, 0.42);
+  border-radius: 34px;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 11px 26px 11px 26px;
+}
 .w-button {
   width: 15rem;
   height: 3rem;

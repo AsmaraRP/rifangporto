@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import "./index.css";
 import { BsLinkedin, BsInstagram, BsGithub } from "react-icons/bs";
 import vector2 from "../../assets/back1.png";
@@ -28,14 +28,26 @@ const Banner = ({ darkMode }) => {
           <span>I'm Rifang Pri Asmara</span>
           <span>"Always be learning whenever, wherever, and whatever you are"</span>
         </div>
-        <Link to="/" smooth={true} spy={true}>
+        <Link to="contact" smooth={true} spy={true}>
           <button className="button banner-button">Contact me</button>
         </Link>
         {/* social icons */}
         <div className="banner-icons">
-          <BsLinkedin size={100} color={"blue"} onMouseOver={({ target }) => (target.style.color = "#ffd55e")} onMouseOut={({ target }) => (target.style.color = "blue")} />
-          <BsInstagram size={100} color={"blue"} onMouseOver={({ target }) => (target.style.color = "#ffd55e")} onMouseOut={({ target }) => (target.style.color = "blue")} />
-          <BsGithub size={100} color={"blue"} onMouseOver={({ target }) => (target.style.color = "#ffd55e")} onMouseOut={({ target }) => (target.style.color = "blue")} />
+          <BsLinkedin
+            size={100}
+            color={"blue"}
+            onMouseOver={({ target }) => (target.style.color = "#ffd55e")}
+            onMouseOut={({ target }) => (target.style.color = "blue")}
+            onClick={() => window.open("https://www.linkedin.com/in/rifangpa/")}
+          />
+          <BsInstagram
+            size={100}
+            color={"blue"}
+            onMouseOver={({ target }) => (target.style.color = "#ffd55e")}
+            onMouseOut={({ target }) => (target.style.color = "blue")}
+            onClick={() => window.open("https://www.instagram.com/rifangprias")}
+          />
+          <BsGithub size={100} color={"blue"} onMouseOver={({ target }) => (target.style.color = "#ffd55e")} onMouseOut={({ target }) => (target.style.color = "blue")} onClick={() => window.open("https://github.com/AsmaraRP")} />
         </div>
       </div>
       {/* right image side */}

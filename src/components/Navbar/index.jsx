@@ -18,17 +18,17 @@ function Navbar({ handleTheme, darkMode }) {
         <div className="navbar-list">
           <ul style={{ listStyleType: "none" }}>
             <li>
-              <Link activeClass="active" to="/" spy={true} smooth={true}>
+              <Link activeClass="active" to="about" spy={true} smooth={true}>
                 About
               </Link>
             </li>
             <li>
-              <Link to="/" spy={true} smooth={true}>
+              <Link to="portfolio" spy={true} smooth={true}>
                 Porfolio
               </Link>
             </li>
             <li>
-              <Link to="/" spy={true} smooth={true}>
+              <Link to="experiences" spy={true} smooth={true}>
                 Experiences
               </Link>
             </li>
